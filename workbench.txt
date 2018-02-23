@@ -1,0 +1,11 @@
+select * from users;
+insert into users (user_id, first_name, last_name, created_at, updated_at) values (10, 'Ross', 'Geller', NOW, NOW);
+DELETE FROM users
+WHERE id = 10;
+SELECT CONCAT(first_name, " ", last_name_ FROM users;
+SELECT CONCAT_WS(' ', first_name, last_name) FROM users;
+SELECT LOWER (first_name) FROM users
+WHERE id = 2;
+SELECT users.first_name, comments.comment
+FROM users
+JOIN comments ON users.id = comments.user.id;
